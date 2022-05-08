@@ -1,0 +1,58 @@
+extends layout
+ 
+block content
+
+  #playing-table
+    #player
+      h2 Player
+      p#player-cards-el Cards:
+      p#player-sum-el Points:
+      img#pcard0(src='images/blank.png')
+      img#pcard1(src='images/blank.png')
+      img#pcard2(src='images/blank.png')
+      img#pcard3(src='images/blank.png')
+      img#pcard4(src='images/blank.png')
+      img#pcard5(src='images/blank.png')
+      img#pcard6(src='images/blank.png')
+      img#pcard7(src='images/blank.png')
+      img#pcard8(src='images/blank.png')
+      img#pcard9(src='images/blank.png')
+      img#pcard10(src='images/blank.png')
+      img#deck(src='images/card_back.png')
+    #buttonrow
+
+       
+      div
+        button#hitbtn(onclick='hit_card()') HIT
+        button#standbtn(onclick='stay_card()') STAY
+ 
+    #dealer
+      h1 Dealer
+      img#dcard0(src='images/blank.png')
+      img#dcard1(src='images/blank.png')
+      img#dcard2(src='images/blank.png')
+      img#dcard3(src='images/blank.png')
+      img#dcard4(src='images/blank.png')
+      img#dcard5(src='images/blank.png')
+      img#dcard6(src='images/blank.png')
+      img#dcard7(src='images/blank.png')
+      img#dcard8(src='images/blank.png')
+      img#dcard9(src='images/blank.png')
+      img#dcard10(src='images/blank.png')
+      p#dealer-cards-el Cards:
+      p#dealer-sum-el Points:
+  #myModal.modal
+    .modal-content
+      br
+      p#message-el BLACKJACK
+      br
+      button#playbtn1(onclick='playButton()') START
+
+ 
+
+ 
+  script(src='/javascripts/main.js')
+
+ 
+ 
+
